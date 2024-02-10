@@ -1,0 +1,17 @@
+@import "../../variabels.scss";
+$small: 300px;
+$medium: 900px;
+
+.container {
+  display: flex;
+  flex: 1 0;
+  flex-direction: column;
+  width: 100%;
+  .title {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: calc(32 / 26);
+    color: #d5d7e7;
+    padding: 36px 32px;
+  }
+}
