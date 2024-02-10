@@ -1,45 +1,42 @@
-import { useNavigate } from "react-router-dom";
-import { collection, addDoc } from "firebase/firestore";
-import { useAppContext } from "@state/context";
-import { db } from "../../database";
+// import { useNavigate } from "react-router-dom";
+// import { collection, addDoc } from "firebase/firestore";
+// import { useAppContext } from "@state/context";
+// import { db } from "../../database";
 
 import style from "./style.module.scss";
 import Exchange from "@components/Exchange";
 
 function App() {
-  const state = useAppContext();
 
-  const navigate = useNavigate();
+  // const createDoc = async () => {
+  //   try {
+  //     const newTransaction = {
+  //       fromCurrency: {
+  //         name: state.currencyFrom?.name,
+  //         code: state.currencyFrom?.code,
+  //       },
+  //       toCurrency: {
+  //         name: state.currencyTo?.name,
+  //         code: state.currencyTo?.code,
+  //       },
+  //       created: new Date(),
+  //       status: "pending",
+  //       send: state.currencyFrom?.value,
+  //       receive: state.currencyTo?.value,
+  //       wallet: state.wallet,
+  //       email: state.email,
+  //     };
 
-  const createDoc = async () => {
-    try {
-      const newTransaction = {
-        fromCurrency: {
-          name: state.currencyFrom?.name,
-          code: state.currencyFrom?.code,
-        },
-        toCurrency: {
-          name: state.currencyTo?.name,
-          code: state.currencyTo?.code,
-        },
-        created: new Date(),
-        status: "pending",
-        send: state.currencyFrom?.value,
-        receive: state.currencyTo?.value,
-        wallet: state.wallet,
-        email: state.email,
-      };
-
-      const docRef = await addDoc(
-        collection(db, "transactions"),
-        newTransaction
-      );
-      navigate(`/transaction?id=${docRef.id}`);
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  };
+  //     const docRef = await addDoc(
+  //       collection(db, "transactions"),
+  //       newTransaction
+  //     );
+  //     navigate(`/transaction?id=${docRef.id}`);
+  //     console.log("Document written with ID: ", docRef.id);
+  //   } catch (e) {
+  //     console.error("Error adding document: ", e);
+  //   }
+  // };
 
 
 
