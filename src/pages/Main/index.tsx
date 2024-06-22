@@ -53,7 +53,7 @@ function App() {
           data-duration="600"
           id="navbar"
           data-doc-height="1"
-        >
+        >2
           <div id="navbar-backdrop" className="navbar_backdrop hide"></div>
           <nav role="navigation" className="navbar_menu w-nav-menu">
             <div className="navbar_menu-circle"></div>
