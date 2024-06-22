@@ -1,0 +1,72 @@
+@import "../../variabels.scss";
+$small: 300px;
+$medium: 900px;
+.exchangeComponent {
+  width: 500px;
+  height: 80vh;
+  background-color: var(--neutral-800);
+  border-radius: 3.2rem;
+}
+
+.transaction {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral-900);
+  .transactionContent {
+    background-color: #0069606b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    color: #c0c0c0 !important;
+    width: 100%;
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      align-items: center;
+      font-size: 24px;
+      color: #ffffff !important;
+      margin-bottom: 18px;
+    }
+
+    .value {
+      span {
+        color: #5afaf2;
+      }
+    }
+
+    .time {
+      margin-bottom: 12px;
+      span {
+        color: white !important;
+      }
+    }
+
+    .status {
+      margin-bottom: 12px;
+      span {
+        color: rgb(69, 174, 245) !important;
+      }
+    }
+
+    .wallet {
+      margin-bottom: 12px;
+      span {
+        color: white !important;
+      }
+    }
+
+    .created {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+  }
+}
