@@ -152,16 +152,16 @@ const TransactionPage = () => {
       console.error("Error adding document: ", e);
     }
   };
-
+  console.log(transactionId);
   return (
     <div className={style.transaction}>
-      {!transactionId && (
+      {!(transactionId || itemId) && (
         <div className={style.exchangeComponent}>
           <Exchange createTransaction={createDoc} />
         </div>
       )}
 
-      {transaction && transactionId && (
+      {transaction && (transactionId || itemId) && (
         <TransactionContent
           fromCurrency={{
             name: transaction.fromCurrency.name,
