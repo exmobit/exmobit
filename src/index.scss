@@ -464,3 +464,14 @@ svg {
   text-decoration: none;
   font-size: 56px;
 }
+.footer_grid2 {
+  grid-column-gap: 1.6rem;
+  grid-row-gap: 4.75rem;
+  grid-template-rows: auto auto;
+  grid-template:
+    "links.help"
+    "bottom-footer bottom-footer bottom-footer" / 13fr 2fr 7fr;
+
+  grid-auto-columns: 1fr;
+  display: grid;
+}

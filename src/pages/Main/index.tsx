@@ -10,7 +10,6 @@ function App() {
     navigate(`/transaction`);
   };
 
-
   return (
     <div className={style.mainPage}>
       <div className="page-wrapper">
@@ -391,10 +390,170 @@ function App() {
                 </div>
               </div>
             </section>
+            <section id="about-us" className="section_about-us">
+              <div className="w-embed">
+                <style></style>
+              </div>
+              <div className="w-layout-grid section_about-us-grid">
+                <div
+                  id="w-node-_6aa3dcc5-1d4d-d54e-ae50-216af159f5de-4933b8fe"
+                  data-w-id="6aa3dcc5-1d4d-d54e-ae50-216af159f5de"
+                  className="section_about-us-header"
+                >
+                  <h2 className="section_about-us-title">Why Exmobit?</h2>
+                  <div fade-in-up="" className="section_about-us-description">
+                    The stakes are high in crypto. You and your customers
+                    deserve a Web3 payment solution that drives more approvals
+                    and more revenue from more assets.
+                  </div>
+                  <h3 className="section_about-us-subtitle hide-tablet">
+                    That’s where we come in.
+                  </h3>
+           
+                </div>
+           
+              </div>
+            </section>
           </div>
         </main>
+
         <footer id="footer" className="footer">
           <div className="footer_padding-global">
+            <div className="footer_grid2">
+              <div
+                id="w-node-be079e89-3082-1835-c062-f4e7d65a4727-ec6f1194"
+                className="footer_links-col"
+              >
+                <div className="footer_links-wrapper">
+                  <div
+                    id="w-node-d783e7d4-e2b8-bbe8-4818-5f8a795459b7-ec6f1194"
+                    className="footer_links-block"
+                  >
+                    <a
+                      href="#"
+                      className="footer_links-title-link display-table text-decoration-none cursor-default"
+                    >
+                      Company
+                    </a>
+                    <a
+                      fade-in-up=""
+                      href="/"
+                      className="footer_link text-size-small"
+                    >
+                      About Topper{" "}
+                    </a>
+                    <a
+                      fade-in-up=""
+                      href="/"
+                      className="footer_link text-size-small"
+                    >
+                      News &amp; Media
+                    </a>
+                    <a
+                      fade-in-up=""
+                      href="/"
+                      className="footer_link text-size-small"
+                    >
+                      {" "}
+                      Talk to sales
+                    </a>
+                  </div>
+                  <div
+                    id="w-node-c51fd183-01b9-4893-67cd-7b3a523de93f-ec6f1194"
+                    className="footer_links-block"
+                  >
+                    <a
+                      href="/"
+                      className="footer_links-title-link display-table"
+                    >
+                      Digital Assets
+                    </a>
+                    <a
+                      href="/"
+                      className="footer_links-title-link display-table margin-top margin-24"
+                    >
+                      Blog
+                    </a>
+                  </div>
+                  <div
+                    id="w-node-caf557a7-6f6b-b75a-8d54-a90f7028f1df-ec6f1194"
+                    className="footer_links-block"
+                  >
+                    <a
+                      href="/"
+                      className="footer_links-title-link display-table"
+                    >
+                      Help
+                    </a>
+                    <a
+                      fade-in-up=""
+                      href="/"
+                      className="footer_link text-size-small"
+                    >
+                      FAQ &amp; Support
+                    </a>
+                  </div>
+                  <div
+                    id="w-node-_9c377b19-8959-ef4e-c85f-558f4773decf-ec6f1194"
+                    className="footer_links-block"
+                  >
+                    <a
+                      href="/"
+                      className="footer_links-title-link display-table"
+                    >
+                      Legal
+                    </a>
+                    <a
+                      fade-in-up=""
+                      href="/"
+                      className="footer_link text-size-small"
+                    >
+                      Terms of use Privacy Data Policy
+                    </a>
+
+                    <a
+                      fade-in-up=""
+                      href="/"
+                      className="footer_link text-size-small margin-0"
+                    >
+                      {" "}
+                      Law Enforcement
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="w-node-_1f307d45-d1ea-63e4-cdcc-bb45ec6f1199-ec6f1194"
+                className="footer_right-col"
+              >
+                <div className="footer_help-title">Need help?</div>
+                <p fade-in-up="" className="footer_help-text">
+                  Feel free to drop us a line and our team will get in touch
+                  with you.
+                </p>
+                <a
+                  href="/"
+                  target="_blank"
+                  className="button is-icon get-started-button mobile-full-width w-inline-block"
+                >
+                  <div className="button_text">Talk to support</div>
+                  <div className="icon-24 z-index-2 w-embed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M14.03 4.72a.75.75 0 1 0-1.06 1.06l5.47 5.47H3.75a.75.75 0 0 0 0 1.5h14.69l-5.47 5.47a.75.75 0 1 0 1.06 1.06l6.75-6.75a.747.747 0 0 0 0-1.06l-6.75-6.75Z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
             <div className="w-layout-grid footer_grid">
               <div
                 id="w-node-_1f307d45-d1ea-63e4-cdcc-bb45ec6f119f-ec6f1194"

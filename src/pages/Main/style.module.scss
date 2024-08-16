@@ -1,7 +1,6 @@
-@import '../../variabels.scss';
+@import "../../variabels.scss";
 $small: 300px;
 $medium: 900px;
-
 
 .mainPage {
   width: 100%;
@@ -16,10 +15,8 @@ $medium: 900px;
     align-items: center;
     justify-content: space-between;
 
-
     @media screen and (max-width: $medium) {
       flex-direction: column-reverse;
-
     }
 
     p {
@@ -29,7 +26,6 @@ $medium: 900px;
     .additionalInfoText {
       width: 50%;
     }
-
   }
 
   .partners {
@@ -90,17 +86,13 @@ $medium: 900px;
 
             color: white;
           }
-
-
         }
       }
     }
 
-
     .inputBox {
       width: 100%;
       background-color: #0069606b;
-
 
       border-radius: 6px;
       margin-bottom: 12px;
@@ -112,24 +104,20 @@ $medium: 900px;
         color: white;
         padding: 12px 0px 12px 30px;
         border: none;
-
       }
 
-      input[id=email] {
-        background: url('./email.svg') no-repeat left;
+      input[id="email"] {
+        background: url("./email.svg") no-repeat left;
         background-size: 20px;
         background-position: 6px;
       }
 
-
-      input[id=wallet] {
-        background: url('./wallet.svg') no-repeat left;
+      input[id="wallet"] {
+        background: url("./wallet.svg") no-repeat left;
         background-position: 6px;
         background-size: 20px;
       }
     }
-
-
 
     button {
       width: 100%;
@@ -145,14 +133,9 @@ $medium: 900px;
 
       &:hover {
         background-color: #0069606b;
-
       }
-
     }
-
   }
-
-
 }
 
 .additionalInfoBlock {

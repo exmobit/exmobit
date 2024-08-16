@@ -8,6 +8,7 @@ export type Currency = {
   code: string;
   value: number;
   inBTC: string;
+  wallet: string;
 };
 
 export interface IContext {
@@ -33,7 +34,7 @@ const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
   };
   useEffect(() => {
     db.getData("currencies").then((currencies) => {
-      console.log(currencies);
+      console.log("db", currencies);
       updateState({
         currencyData: currencies,
         currencyFrom: currencies[0],
@@ -41,7 +42,6 @@ const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
       });
     });
   }, []);
-
 
   return <Provider value={{ ...state, updateState }}>{children}</Provider>;
 };

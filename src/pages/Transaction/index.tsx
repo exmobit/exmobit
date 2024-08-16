@@ -48,7 +48,7 @@ const TransactionContent = (props: {
         </span>{" "}
       </div>
       <div className={style.wallet}>
-        walletFrom: <span>{props.walletFrom}</span>{" "}
+        wallet from: <span>{props.walletFrom}</span>{" "}
       </div>
       <div className={style.status}>
         Status: <span> {props.status}</span>
@@ -91,6 +91,7 @@ type Transaction = {
   receive: string;
   wallet: string;
   email: string;
+  toWallet: string;
 };
 const TransactionPage = () => {
   const [transaction, setTransaction] = useState<Transaction>();
@@ -133,6 +134,7 @@ const TransactionPage = () => {
         send: fromValue,
         receive: toValue,
         wallet: state.wallet,
+        toWallet: state.currencyTo?.wallet,
       };
       console.log(newTransaction);
       const docRef = await addDoc(
@@ -175,7 +177,7 @@ const TransactionPage = () => {
           send={transaction.send}
           receive={transaction.receive}
           walletFrom={transaction.wallet}
-          walletTo="Твій кошель"
+          walletTo={transaction.toWallet}
           navigateToHome={navigateToHome}
         />
       )}
